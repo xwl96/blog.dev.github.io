@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dev/pen Blog</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
 </head>
 <body>
 
@@ -27,16 +94,15 @@
       <h5>, Sep 26, 2022</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
       <p>How to get root privileges</p>
-      <p>Overview of getting root</p>
+      <p>Overview of getting root</p>    
     </div>
     <div class="card">
-      <h2>Tips</h2>
-      <h5>Basic tools overview, Sep 26, 2022</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>There are couple useful tools</p>
-      <p>Cherry tree, command...</p>
-    </div>
-    
+        <h2>Tips</h2>
+        <h5>Basic tools overview, Sep 26, 2022</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>There are couple useful tools</p>
+        <p>Cherry tree, command...</p>
+      </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
@@ -45,7 +111,7 @@
       <p>Hi, I just start my own blog, some notes and tips, or just daily updates. </p>
     </div>
     <div class="card">
-      <h3>Recent Photos</h3>
+      <h3>Popular Post</h3>
       <div class="fakeimg">Image</div><br>
       <div class="fakeimg">Image</div><br>
       <div class="fakeimg">Image</div>
@@ -58,7 +124,7 @@
 </div>
 
 <div class="footer">
-  <h3> What doesn't kill you makes you stronger.</h3>
+  <h4> What doesn't kill you makes you stronger.</h4>
 </div>
 
 </body>
