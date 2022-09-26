@@ -32,7 +32,7 @@ body {
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  background: white;
   width: 100%;
   padding: 20px;
 }
